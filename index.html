@@ -14,17 +14,81 @@
                 <img src="./img/logo.png" alt="logo">
             </div>
             <nav>
-                <a id="">Сатьи</a>
-                 <a id="">Обо мне</a>
-                <a id="">Портфолио</a>
-                <a id="">Написать</a>
+                <a href="#Articles">Сатьи</a>
+                 <a href="#About">Обо мне</a>
+                <a href="#Projects">Портфолио</a>
+                <a href="#Write">Написать</a>
             </nav>           
         </div>
     </header>
 
     <main>
         <div class="container">
-            
+            <div id="Articles">
+                <div class="article_top"> 
+                    <h2>Все статьи</h2>
+                    <select>
+                        <option name="choose_theme">Выбрать тему</option>
+                        <option name="choose_theme" value="Travel">Путешествия</option>
+                        <option name="choose_theme" value="City">Город</option>
+                        <option name="choose_theme" value="Books">Книги</option>
+                        <option name="choose_theme" value="Photos">Фотографии</option>
+                        <option name="choose_theme" value="Coocking">Рецепты</option>
+                        <option name="choose_theme" value="all_articles">Все статьи</option>
+                    </select>
+                </div>
+                <section class="Articles_small" id="Articles">
+                    <article class="column_a1">
+                        <img src="./img/August_Berlin.jpg" alt="August_Berlin">
+                        <h3>Путешествие в берлин в Августе</h3>
+                        <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+                        <div class="tags_data">
+                            <p>Теги: путешествия</p>
+                        <time datetime="1969-07-16">29.09.2020</time>                            
+                        </div>
+                    </article>
+                    <article class="column_a2">
+                        <img src="./img/drink_in_Moscow.jpg" alt="drink_in_Moscow">
+                        <h3>Где выпить колдбрю в Москве</h3>
+                        <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+                        <div class="tags_data">
+                            <p>Теги: город</p>
+                        <time datetime="1969-07-16">24.07.2020</time>                            
+                        </div>
+                    </article>
+                    <article class="column_a3">
+                        <img src="./img/books_recomendation.jpg" alt="drink_in_Moscow">
+                        <h3>Прочитано: книжные рекомендации</h3>
+                        <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+                        <div class="tags_data">
+                            <p>Теги: книги</p>
+                        <time datetime="1969-07-16">15.07.2020</time>                            
+                        </div>
+                    </article>
+                </section>
+                <section class="ArticleS_big">
+                    <div class="big_1">
+                        <h3>Снимки на плёнку</h3>
+                        <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+                        <div class="tags_data">
+                            <p>Теги: фотографии</p>
+                        <time datetime="1969-07-16">29.06.2020</time>                            
+                        </div>
+                    </div>
+                    <div class="big_2">
+                        <h3>Домашний чизкейк</h3>
+                        <p>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+                        <div class="tags_data">
+                            <p>Теги: рецепты</p>
+                        <time datetime="1969-07-16">24.06.2020</time>                            
+                        </div>
+                    </div>
+                </section>
+                <form action="" name="Show_more">
+                    <button type="button" name="Show_more" value="Articles">Показать еще</button>
+                </form>
+                
+            </div>
         </div>
     </main>
 
