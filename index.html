@@ -14,9 +14,9 @@
                 <img src="./img/logo.png" alt="logo">
             </div>
             <nav>
-                <a href="#Articles">Сатьи</a>
-                 <a href="#About">Обо мне</a>
-                <a href="#Projects">Портфолио</a>
+                <a href="#Articles">Статьи</a>
+                <a href="#About">Обо мне</a>
+                <a href="#Portfolio">Портфолио</a>
                 <a href="#Write">Написать</a>
             </nav>           
         </div>
@@ -24,7 +24,7 @@
 
     <main>
         <div class="container">
-            <div id="Articles">
+            <section id="Articles" id="Articles">
                 <div class="article_top"> 
                     <h2>Все статьи</h2>
                     <select>
@@ -88,14 +88,80 @@
                     <button type="button" name="Show_more" value="Articles">Показать еще</button>
                 </form>
                 
-            </div>
+            </section>
+            
+            <section class="About" id="About">
+                <h2>Обо мне</h2>
+                <img src="./img/about_Ann.jpg" alt="about_Ann">
+                <div class="Text_about">
+                    <p>Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
+                    <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
+                    <p>Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p>
+                    <p>Приятного чтения!</p>
+                </div>
+                <div class="quote">
+                    <p class="quote">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя.</p>
+                </div>    
+                
+                
+            </section>
+
+            <section class="Portfolio" id="Portfolio">
+                <h2>Портфолио</h2>   
+                <div class="portgolio_articles">
+                    <article class="article_1">
+                        <h2>Блог HTML Academy</h2>
+                        <h3>«Как учиться продуктивно»</h3>
+                        <p>Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
+                    </article>
+
+                    <article class="article_2">
+                        <h2>Журнал «LNK»</h2>
+                        <h3>«Зачем поцели нужны человеку? И какие они бывают»</h3>
+                        <p>Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
+                    </article>
+
+                    <article class="article_3">
+                        <h2>Журнал «Т — Л»</h2>
+                        <h3>«Советы по эффективной удалённой работе»</h3>
+                        <p>Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.</p>
+                    </article>
+                </div>
+                <form action="">
+                    <button type="button" name="Show_more" value="Portfolio">Показать ещё</button>
+                </form>
+            </section>
+
+            <section class="Write" id="Write">
+                <h2>Написать мне</h2>
+                <form action="">
+                    <label for="name">Ваше имя</label> 
+                    <input type="text" name="name" id="name" placeholder="Иван Иванов" required>
+                    <label for="mail">Email</label>     
+                        <input type="text" name="mail" id="mail" placeholder="google@gmail.com" required>
+                        <br>
+                    <label for="message">Сообщение</label>
+                        <textarea name="message" id="message" minlength="10" maxlength="200" cols="30" rows="10" placeholder="Напишите здесь ваше сообщение."></textarea>
+                
+                    <button type="button" name="Send" value="Send">Отправить</button>
+                </form>
+
+            </section>
+
+
         </div>
+        
+        <footer>
+            <div class="container">
+                <a href="">ВК</a>
+                <a href="">Телеграм</a>
+                <a href="">Инстаграм</a>
+                <a href="">Твиттер</a>
+            </div>
+        </footer>    
+    
     </main>
 
-    <footer>
-        <div class="container">
-            
-        </div>
-    </footer>
+
 </body>
 </html>
