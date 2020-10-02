@@ -1,2 +1,2 @@
 #Site
-https://github.com/Animakkon/zaverstai-2.0.git
+https://animakkon.github.io/zaverstai-2.0/
