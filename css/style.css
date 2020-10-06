@@ -1,0 +1,12 @@
+.container{
+    margin: 0px 120px;
+
+}
+
+header{
+    background-image: url("../img/main-picture.png");
+    background-repeat: no-repeat;    
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
