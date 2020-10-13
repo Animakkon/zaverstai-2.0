@@ -11,7 +11,7 @@ h2{
     font-family: SpectraBold;
     color: #2E2F22;
     font-size: 36px;
-    line-height: 55px;
+    line-height: 120%;
 }
 
 a{
@@ -52,6 +52,7 @@ select{
     flex-wrap: nowrap;
     justify-content: space-around;
 
+    
 }
 
 .column{
@@ -59,7 +60,8 @@ select{
     flex-direction: column;
 }
 
-.column + .column{
+.column + .column,
+.big + .big{
     margin-left: 15px;
 }
 
@@ -70,7 +72,7 @@ select{
     border-radius: 10px;
 }
 
-.column h3{
+ h3{
     font-family: SpectralBold;
     font-size: 18px;
 }
@@ -80,11 +82,15 @@ select{
     font-size: 16px;
 }
 
-.tags_data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+.tags_data > *{
+    display: inline;
+    
+    color: rgba(46, 47, 34, 0.7);
+}
+
+time{
+    float: right;
+
 }
 
 
@@ -93,23 +99,26 @@ select{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-content: center;
+    
     margin: 100px 0px;
 
     color: white;
-
+    
 
 }
 
 .big{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     flex-basis: auto;
     
-    width: 590px;
+    width: 100%;
     height: 552px;
-   
+
+    border-radius: 10px 10px 10px 10px;
+
+
 }
 
 div .big:nth-child(1){
