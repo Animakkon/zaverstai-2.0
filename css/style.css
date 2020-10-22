@@ -97,9 +97,10 @@ time{
 .Articles_big{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     
+
     margin: 100px 0px;
 
     color: white;
@@ -111,10 +112,14 @@ time{
     display: flex;
     flex-direction: column;
     
-    flex-basis: auto;
+    
+    
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 700px;
     
     width: 100%;
-    height: 552px;
+    
 
     border-radius: 10px 10px 10px 10px;
 
